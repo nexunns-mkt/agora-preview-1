@@ -1,0 +1,1 @@
+const r={comprar:"Quero comprar um imóvel",cliente:"Já sou cliente (pós-venda)",terreno:"Tenho um terreno para oferecer",fornecedor:"Quero ser fornecedor",trabalhe:"Trabalhe conosco",vizinho:"Sou vizinho de uma obra"},e=r[new URLSearchParams(location.search).get("assunto")||""],o=document.querySelector('#form-contato select[name="Assunto"]');e&&o&&(o.value=e);
